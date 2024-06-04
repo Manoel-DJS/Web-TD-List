@@ -1,4 +1,5 @@
 import Task from "@/components/Task";
+import ListTask from "@/components/ListTask";
 import { useEffect, useState } from "react";
 
 const App = () => {
@@ -7,7 +8,7 @@ const App = () => {
         <> 
             <div className="container">
 
-                <div className="dheader">
+                <div className="div-header">
                     <text className="div-text" style={{color: "black"}}>
                         <strong>TODO LIST</strong>
                     </text >
@@ -17,6 +18,7 @@ const App = () => {
 
                 <div className="dbody">
 
+                <ListTask/>
 
                 </div>
 

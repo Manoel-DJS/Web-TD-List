@@ -19,7 +19,7 @@ body, html{
     background-Color: #6A74E6;
 }
 
-.dheader {
+.div-header {
     position: absolute;
     width: 750px;
     height: 135px;
@@ -34,8 +34,9 @@ body, html{
     position: absolute;
     width: 750px;
     height: 575px;
-    background-Color: #000000;
+    background-color: bisque;
     bottom: 0;
+    
 }
 .div-text{
     position: absolute;
