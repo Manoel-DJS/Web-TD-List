@@ -4,13 +4,28 @@ import { useEffect, useState } from "react";
 const App = () => {
 
     return(
-        <>
-        <div id="container" style={{backgroundColor: "black"}}>
+        <> 
+            <div className="container">
 
-        </div>
+                <div className="dheader">
+                    <text className="div-text" style={{color: "black"}}>
+                        <strong>TODO LIST</strong>
+                    </text >
+
+
+                </div>
+
+                <div className="dbody">
+
+
+                </div>
+
+            </div>
         <Task/>
         </>
     )
 }
+
+
 
 export default App;
