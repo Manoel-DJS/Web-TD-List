@@ -17,15 +17,16 @@ const ListComponent = () => {
   return (
     <div className='div-list'>
       <h1>My List</h1>
-      <input 
+      <input
+        className='input-field' 
         type="text" 
         value={newItem} 
         onChange={(e) => setNewItem(e.target.value)} 
       />
-      <button onClick={handleAddItem}>Add Item</button>
-      <ul>
+      <button className='add-button' onClick={handleAddItem}>Add Item</button>
+      <ul className='list-item'>
         {items.map((item, index) => (
-          <li key={index}>
+          <li className='item' key={index}>
             {item} 
             <button className='remove-button' onClick={() => handleRemoveItem(index)}>Remove</button>
           </li>
