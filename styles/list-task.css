@@ -3,5 +3,14 @@
     height: 545px;
     background-color: blue;
     margin: auto;
-    
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 25px;
+}
+
+.remove-button{
+    position: absolute;
+    right: 20%;
+    text-align: right;
+
 }

@@ -27,7 +27,7 @@ const ListComponent = () => {
         {items.map((item, index) => (
           <li key={index}>
             {item} 
-            <button onClick={() => handleRemoveItem(index)}>Remove</button>
+            <button className='remove-button' onClick={() => handleRemoveItem(index)}>Remove</button>
           </li>
         ))}
       </ul>

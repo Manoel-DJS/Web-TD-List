@@ -13,7 +13,6 @@ const App = () => {
                         <strong>TODO LIST</strong>
                     </text >
 
-
                 </div>
 
                 <div className="dbody">
@@ -22,8 +21,8 @@ const App = () => {
 
                 </div>
 
+
             </div>
-        <Task/>
         </>
     )
 }

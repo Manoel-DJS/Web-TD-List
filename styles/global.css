@@ -16,32 +16,44 @@ body, html{
     position: relative;
     width: 750px;
     height: 710px;
-    background-Color: #6A74E6;
+    background-Color: #0015ff;
 }
 
 .div-header {
-    position: absolute;
+    display: flex;
     width: 750px;
     height: 135px;
     background-Color: #00FF09;
     text-align: center;
-    justify-content: center;
     align-items: center;
-
+    justify-content: center;
 }
 
 .dbody {
-    position: absolute;
+    display: flex;
     width: 750px;
     height: 575px;
     background-color: bisque;
-    bottom: 0;
-    
 }
+
 .div-text{
-    position: absolute;
+    display: flex;
     background-color: aqua;
-    top: 35%;
-    left: 45%;
     font-size: 28px;
+}
+
+.pai{
+    display: flex;
+    width: 100vw;
+    position: absolute;
+    top: 77vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.fio{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    background-color: black;
 }
