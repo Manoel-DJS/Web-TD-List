@@ -14,46 +14,32 @@ body, html{
 .container{
     margin: auto;
     position: relative;
+    top: 22px;
     width: 750px;
     height: 710px;
-    background-Color: #0015ff;
+    background-Color: #C3C1E5;
+    border-radius: 2px;
 }
 
 .div-header {
     display: flex;
     width: 750px;
     height: 135px;
-    background-Color: #00FF09;
     text-align: center;
     align-items: center;
     justify-content: center;
-}
+    }
 
-.dbody {
+.div-body {
     display: flex;
     width: 750px;
     height: 575px;
-    background-color: bisque;
+
 }
 
 .div-text{
     display: flex;
-    background-color: aqua;
-    font-size: 28px;
+    font-size: 32px;
+    color: black;
 }
 
-.pai{
-    display: flex;
-    width: 100vw;
-    position: absolute;
-    top: 77vw;
-    align-items: center;
-    justify-content: center;
-}
-
-.fio{
-    width: 100px;
-    height: 100px;
-    display: flex;
-    background-color: black;
-}

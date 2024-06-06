@@ -15,7 +15,7 @@ const App = () => {
 
                 </div>
 
-                <div className="dbody">
+                <div className="div-body">
 
                 <ListTask/>
 

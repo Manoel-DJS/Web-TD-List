@@ -1,17 +1,29 @@
 .div-list{
     width: 520px;
     height: 545px;
-    background-color: blue;
     margin: auto;
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 20px;
 }
 
+.title-two{
+    display: flex;
+    justify-content: center;
+    padding: 12px;
+    position: relative;
+    right: 50px;
+}
+
 .input-field {
-    padding: 8px;
+    width: 350px;
+    height: 12px;
+    background-color: aqua;
+    padding: 12px;
     margin-right: 10px;
     font-size: 16px;
+    border: 2px solid blueviolet;
+    border-radius: 6px;
   }
 
 .add-button {
@@ -29,17 +41,20 @@
 
 .remove-button {
     position: static;
-    background-color: red;
+    background-color: rgba(255, 0, 0, 0.856);
     color: white;
     border: none;
     padding: 5px;
-    border-radius: 40%;
+    border-radius: 30%;
     cursor: pointer;
     right: -60%;
     bottom: 10%;
 }
 
 .item{
+    font-weight: bold;
+    font-size: large;
     display: flex;
     justify-content: space-between;
+    padding-bottom: 10px;
 }

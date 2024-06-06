@@ -16,7 +16,7 @@ const ListComponent = () => {
 
   return (
     <div className='div-list'>
-      <h1>My List</h1>
+      <h2 className='title-two'>My List</h2>
       <input
         className='input-field' 
         type="text" 
