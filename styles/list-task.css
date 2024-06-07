@@ -19,12 +19,13 @@
 .input-field {
     width: 350px;
     height: 12px;
-    background-color: rgb(48, 236, 236);
+    background-color: #40689C;
     padding: 12px;
     margin-right: 10px;
-    font-size: 16px;
-    border: 2px solid blueviolet;
+    font-size: 18px;
+    border: 3px solid rgb(97, 28, 161);
     border-radius: 6px;
+    color: white;
   }
 
 .add-button {
