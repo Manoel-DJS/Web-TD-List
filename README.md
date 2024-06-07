@@ -1,3 +1,5 @@
+# To do List - FrontEnd React + next
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -34,3 +36,49 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Diagrama de Classes - Em obras
+```mermaid
+    class User {
+        +int id
+        +String name
+        +String email
+        +String password
+        +List~Task~ tasks
+        +List~Project~ projects
+        +login()
+        +register()
+        +addTask(Task task)
+        +removeTask(Task task)
+        +addProject(Project project)
+        +removeProject(Project project)
+    }
+
+    class Task {
+        +int id
+        +String title
+        +String description
+        +DateTime dueDate
+        +boolean completed
+        +User assignedTo
+        +Project project
+        +completeTask()
+        +editTask(String title, String description, DateTime dueDate)
+        +assignTo(User user)
+    }
+
+    class Project {
+        +int id
+        +String name
+        +String description
+        +User owner
+        +List~Task~ tasks
+        +addTask(Task task)
+        +removeTask(Task task)
+    }
+
+    User "1" --o "*" Task : has
+    User "1" --o "*" Project : owns
+    Project "1" --o "*" Task : contains
+    Task "1" --o "1" User : assigned to
+```
