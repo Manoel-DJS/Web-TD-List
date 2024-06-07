@@ -37,48 +37,36 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
-## Diagrama de Classes - Em obras
+## Diagrama de Classes - Em obras para o BackEnd
+
 ```mermaid
+classDiagram
     class User {
-        +int id
-        +String name
-        +String email
-        +String password
-        +List~Task~ tasks
-        +List~Project~ projects
-        +login()
-        +register()
-        +addTask(Task task)
-        +removeTask(Task task)
-        +addProject(Project project)
-        +removeProject(Project project)
+        -int id
+        -String name
+        -String email
+        -String password
+        -Task[] tasks
+        -Project[] projects
     }
 
     class Task {
-        +int id
-        +String title
-        +String description
-        +DateTime dueDate
-        +boolean completed
-        +User assignedTo
-        +Project project
-        +completeTask()
-        +editTask(String title, String description, DateTime dueDate)
-        +assignTo(User user)
+        -int id
+        -String title
+        -String description
+        -DateTime dueDate
+        -boolean completed
+
     }
 
     class Project {
-        +int id
-        +String name
-        +String description
-        +User owner
-        +List~Task~ tasks
-        +addTask(Task task)
-        +removeTask(Task task)
+        -int id
+        -String name
+        -String description
+        -User owner
     }
 
-    User "1" --o "*" Task : has
-    User "1" --o "*" Project : owns
-    Project "1" --o "*" Task : contains
-    Task "1" --o "1" User : assigned to
+    User "1" *-- "N" Task
+    User "1" *-- "N" Project
+    Project "1" *-- "N" Task
 ```
