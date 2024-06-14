@@ -43,7 +43,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 classDiagram
     class User {
         -int id
-        -String name
+        -String username
         -String email
         -String password
         -Task[] tasks

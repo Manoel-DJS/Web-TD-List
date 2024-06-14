@@ -6,6 +6,7 @@ const App = () => {
 
     return(
         <> 
+            <title>To Do List</title>
             <div className="container">
 
                 <div className="div-header">
